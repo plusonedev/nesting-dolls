@@ -4,6 +4,18 @@ PATH
     core (0.1.0)
       rails (>= 7.0.4.3)
 
+PATH
+  remote: engines/pits_for_people
+  specs:
+    pits_for_people (0.1.0)
+      rails (>= 7.0.4.3)
+
+PATH
+  remote: engines/vacation_nation
+  specs:
+    vacation_nation (0.1.0)
+      rails (>= 7.0.4.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -166,10 +178,12 @@ DEPENDENCIES
   bootsnap
   core!
   debug
+  pits_for_people!
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sqlite3 (~> 1.4)
   tzinfo-data
+  vacation_nation!
 
 RUBY VERSION
    ruby 3.2.2p53

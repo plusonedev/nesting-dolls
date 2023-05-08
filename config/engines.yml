@@ -1,0 +1,7 @@
+development:
+  pits_for_people: true
+  vacation_nation: true
+
+production:
+  pits_for_people: true
+  vacation_nation: false

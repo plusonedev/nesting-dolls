@@ -12,7 +12,18 @@ module NestingDolls
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    #
+    def engines
+      config_for(:engines)
+    end
+
+    def load_engines
+      engines = self.engines
+
+      # Require the engines based on the configuration
+      require 'pits_for_people' if engines['pits_for_people'] 
+      require 'vacation_nation' if engines['vacation_nation'] 
+    end
+
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
@@ -25,3 +36,5 @@ module NestingDolls
     config.api_only = true
   end
 end
+
+NestingDolls::Application.new.load_engines

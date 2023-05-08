@@ -48,3 +48,7 @@ end
 
 
 gem 'core', path: 'engines/core'
+
+gem 'pits_for_people', path: 'engines/pits_for_people', require: false
+gem 'vacation_nation', path: 'engines/vacation_nation', require: false
+
