@@ -8,12 +8,14 @@ PATH
   remote: engines/pits_for_people
   specs:
     pits_for_people (0.1.0)
+      core
       rails (>= 7.0.4.3)
 
 PATH
   remote: engines/vacation_nation
   specs:
     vacation_nation (0.1.0)
+      core
       rails (>= 7.0.4.3)
 
 GEM
